@@ -20,7 +20,24 @@ const assertArraysEqual = function(actual, expected) {
   }
 };
   
-
-assertArraysEqual([1,2,3],[1,2,3]);
-assertArraysEqual([1,2,3],[1,3,3]);
-assertArraysEqual([1,2,3],[1,2,"3"]);
+const without = function(source, itemsToRemove) {
+  let newArray = [];
+  let flag = false;
+  for (let i in source) {
+    for (let j in itemsToRemove) {
+      if (source[i] === itemsToRemove[j]) {
+        flag = true;
+        break;
+      }
+    }
+    if (flag === false) {
+      newArray.push(source[i]);
+    } else {
+      flag = false;
+    }
+  }
+  return newArray;
+};
+assertArraysEqual(without([1,2,3,4], [2,4]), [1,3]);
+assertArraysEqual(without([6,5,2,1,9], [1,2]), [6,5,9]);
+assertArraysEqual(without([5,6,7,5,6,7,2,5], [5,2]), [6,7,6,7]);
