@@ -38,6 +38,8 @@ const without = function(source, itemsToRemove) {
   }
   return newArray;
 };
-assertArraysEqual(without([1,2,3,4], [2,4]), [1,3]);
-assertArraysEqual(without([6,5,2,1,9], [1,2]), [6,5,9]);
-assertArraysEqual(without([5,6,7,5,6,7,2,5], [5,2]), [6,7,6,7]);
+// assertArraysEqual(without([1,2,3,4], [2,4]), [1,3]);
+// assertArraysEqual(without([6,5,2,1,9], [1,2]), [6,5,9]);
+// assertArraysEqual(without([5,6,7,5,6,7,2,5], [5,2]), [6,7,6,7]);
+
+module.exports = without;

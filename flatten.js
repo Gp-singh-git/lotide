@@ -34,5 +34,7 @@ const flatten = function(array1) {
   return answer;
 };
 
-assertArraysEqual(flatten([1,2,3,[4,5,6],7,8]), [1,2,3,4,5,6,7,8]);
-assertArraysEqual(flatten(["a","b",["c","d","e","f"],"g"]), ["a","b","c","d","e","f","g"]);
+// assertArraysEqual(flatten([1,2,3,[4,5,6],7,8]), [1,2,3,4,5,6,7,8]);
+// assertArraysEqual(flatten(["a","b",["c","d","e","f"],"g"]), ["a","b","c","d","e","f","g"]);
+
+module.exports = flatten;

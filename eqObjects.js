@@ -38,25 +38,25 @@ const eqObjects = function(object1, object2) {
   return true;
 };
 
+module.exports = eqObjects;
+// const ab = { a: "1", b: "2" };
+// const ba = { b: "2", a: "1" };
+// assertEqual(eqObjects(ab, ba), true); // => true
 
-const ab = { a: "1", b: "2" };
-const ba = { b: "2", a: "1" };
-assertEqual(eqObjects(ab, ba), true); // => true
+// const abc = { a: "1", b: "2", c: "3" };
+// assertEqual(eqObjects(ab, abc), false); // => false
 
-const abc = { a: "1", b: "2", c: "3" };
-assertEqual(eqObjects(ab, abc), false); // => false
+// const aaa = {a: "2", b: [1,2,3], c: [4,5,6]};
+// const bbb = { b: [1,2,3], c: [4,5,6], a: "2"};
 
-const aaa = {a: "2", b: [1,2,3], c: [4,5,6]};
-const bbb = { b: [1,2,3], c: [4,5,6], a: "2"};
+// assertEqual(eqObjects(aaa, bbb), true);
 
-assertEqual(eqObjects(aaa, bbb), true);
+// const aaaa = {a: "2", b: [1,2,3], c: [4,5,6]};
+// const bbbb = { b: [1,2,3], c: [4,6,6], a: "2"};
 
-const aaaa = {a: "2", b: [1,2,3], c: [4,5,6]};
-const bbbb = { b: [1,2,3], c: [4,6,6], a: "2"};
+// assertEqual(eqObjects(aaaa, bbbb), false);
 
-assertEqual(eqObjects(aaaa, bbbb), false);
+// const aaaaa = {a: "2", b: [1,2,3], c: [4,5,6]};
+// const bbbbb = { b: [1,2,3], c: [4,5,6], e: "2"};
 
-const aaaaa = {a: "2", b: [1,2,3], c: [4,5,6]};
-const bbbbb = { b: [1,2,3], c: [4,5,6], e: "2"};
-
-assertEqual(eqObjects(aaaaa, bbbbb), false);
+// assertEqual(eqObjects(aaaaa, bbbbb), false);

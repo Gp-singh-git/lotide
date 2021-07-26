@@ -33,5 +33,7 @@ const assertArraysEqual = function(actual, expected) {
   }
 };
   
-assertArraysEqual(letterPositions("hello world lol")["l"], [2,3,9,12,14]);
-assertArraysEqual(letterPositions("hello world lol")["o"], [4,7,13]);
+// assertArraysEqual(letterPositions("hello world lol")["l"], [2,3,9,12,14]);
+// assertArraysEqual(letterPositions("hello world lol")["o"], [4,7,13]);
+
+module.exports = letterPositions;

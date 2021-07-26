@@ -21,7 +21,8 @@ const countLetters = function(str) {
 };
 
 
-console.log(countLetters("I love these new functions and love them all"));
-assertEqual(countLetters("I love these new functions and love them all")["l"],4);
+// console.log(countLetters("I love these new functions and love them all"));
+// assertEqual(countLetters("I love these new functions and love them all")["l"],4);
 
 
+module.exports = countLetters;

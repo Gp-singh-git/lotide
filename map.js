@@ -31,6 +31,7 @@ const map = function(array, callback) {
 };
 
 
-assertArraysEqual(map(words, word => word[0]), ['g','c','t','m','t']);
-assertArraysEqual(map(["apple", "banana", "grapes"], word => word[0]), ['a','b','g']);
-assertArraysEqual(map(["Canada", "Australia", "Germany"], word => word[0]), ['C','A','G']);
+// assertArraysEqual(map(words, word => word[0]), ['g','c','t','m','t']);
+// assertArraysEqual(map(["apple", "banana", "grapes"], word => word[0]), ['a','b','g']);
+// assertArraysEqual(map(["Canada", "Australia", "Germany"], word => word[0]), ['C','A','G']);
+module.exports = map;
