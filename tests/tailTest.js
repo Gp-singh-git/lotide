@@ -1,14 +1,13 @@
-const assertEqual = require('../assertEqual');
+const assert = require('chai').assert;
 const tail = require('../tail');
 
-let result = tail(["Hello", "Lighthouse", "Labs"]);
-assertEqual(result.length, 2);
-assertEqual(result[0], "Lighthouse");
-assertEqual(result[1], "Labs");
+describe("Testing tail for different values", () => {
 
-result = tail([5,6,7]);
-assertEqual(result.length, 2);
-assertEqual(result[0], 6);
-assertEqual(result[1], 7);
+it("tail([\"Hello\", \"Lighthouse\", \"Labs\"]) should return [\"Lighthouse\", \"Labs\"]", () => {
+  assert.deepEqual(tail(["Hello", "Lighthouse", "Labs"]),["Lighthouse", "Labs"] )
+});
 
-console.log(tail([]));
+it("tail([5,6,7]) should return [6,7]", () => {
+  assert.deepEqual(tail([5,6,7]),[6,7]);
+});
+});
