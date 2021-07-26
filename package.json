@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@gpsingh/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "collection of functions usable on arrays objects and strings",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "tests"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/Gp-singh-git/lotide.git"
   },
-  "author": "",
+  "author": "Gp singh",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Gp-singh-git/lotide/issues"
